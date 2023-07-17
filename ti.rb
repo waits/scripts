@@ -1,9 +1,12 @@
-require 'securerandom'
+seed = ARGV[0]
+players = ARGV[1..-1]
+srand(Integer(seed))
 
-players = ARGV.shuffle(random: SecureRandom)
 race_count = players.length + 3
-races = File.read("ti_races.txt").split("\n\n").map(&:strip).shuffle(random: SecureRandom).take(race_count)
+races = File.read("ti_races.txt").split("\n\n").map do |race|
+  race.split("\n").first
+end.shuffle.take(race_count)
 
-puts "Draft order: " + players.join(" ")
-puts "\nAvailable factions:\n\n"
-puts races.join("\n\n")
+puts "Draft order: " + players.shuffle.join(" ")
+puts "Available factions:\n"
+puts races.join("\n")
