@@ -1,14 +1,15 @@
-seed = ARGV[0]
-players = ARGV[1..-1]
-srand(Integer(seed))
+require 'csv'
 
-puts "Draft order: " + players.shuffle.join(" ")
+players = ARGV
+faction_count = Integer(ENV["FACTIONS"] || players.size + 2)
+seed = ENV["SEED"] || 0
+random = Random.new(Integer(seed))
 
-if ENV["RACES"]
-  race_count = players.length + 3
-  races = File.read("ti_races.txt").split("\n\n").map do |race|
-    race.split("\n").first
-  end.shuffle.take(race_count)
-  puts "Available factions:\n"
-  puts races.join("\n")
-end
+puts "Draft order: " + players.shuffle(random: random).join(" ")
+
+factions = CSV.read("factions.csv", headers: true).sort_by do |row|
+  [row["Popularity"], random.rand]
+end.take(faction_count).map do |row|
+  row["Faction"]
+end.sort
+puts "Available factions:\n#{factions.join("\n")}\n"
