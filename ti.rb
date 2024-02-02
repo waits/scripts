@@ -1,7 +1,7 @@
 require 'csv'
 
 players = ARGV
-faction_count = Integer(ENV["FACTIONS"] || players.size + 2)
+faction_count = Integer(ENV["FACTIONS"] || players.size + 3)
 seed = ENV["SEED"] || 0
 random = Random.new(Integer(seed))
 
