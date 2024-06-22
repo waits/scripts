@@ -1,7 +1,7 @@
 2023-06-03 | base | random | R7
-Donnie	Sardakk	9	SW
+Donnie	Sardakk	8	SW
 Michael	Xxcha	10	SE
-Dylan	Muaat	7 	NW
+Dylan	Muaat	6 	NW
 Connor	Nekro	9	NE 	speaker
 
 2023-07-02 | base | standard | R6/time
@@ -14,13 +14,19 @@ Dylan	Sol		7 	N
 
 2023-07-22 | base | golden quaternion | R6
 Connor	Arborec	7 	NW	speaker
-Dylan	Saar	10	NE
-Beni	Yssaril	9	SW
-Laura	Jol-Nar	8 	SE
+Dylan   Saar	 10  	NE
+Beni    Yssaril	9	SW
+Laura   Jol-Nar	8 	SE
 
 2024-01-28 | base | cinquefoil | R7
-Michael	Muaat	7
-Deeps	L1Z1X	8
-Dylan	Ghosts	9
-Beni	Mentak	10
-Connor	Yin		9
+Michael	Muaat	  7	  SE
+Deeps 	L1Z1X  	8	  SW
+Dylan	  Ghosts	9  	NE	speaker
+Beni	  Mentak	10	S
+Connor	Yin	   	9	  NW
+
+2024-03-30 | pok | standard | R7
+Connor  Naalu     11  speaker
+Michael Argent    14
+Dylan   Cabal     11
+Laura   Empyrean  11
