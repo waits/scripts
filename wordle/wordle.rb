@@ -10,7 +10,7 @@ WORDS = CSV.read("words.csv", headers: true).map do |row|
     chars: Set.new(row["word"].chars.sort),
     green: green,
     yellow: yellow,
-    score: green.sum + yellow.values.sum,
+    score: green.sum + yellow.values.sum * (row["answer"] == "true" ? 1.1 : 1),
   }
 end.sort_by { |word| -word[:score] }.map.with_index { |word, i| word.merge(index: i) }.freeze
 
