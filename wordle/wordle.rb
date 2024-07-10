@@ -14,6 +14,16 @@ WORDS = CSV.read("words.csv", headers: true).map do |row|
   }
 end.sort_by { |word| -word[:score] }.map.with_index { |word, i| word.merge(index: i) }.freeze
 
+def next_guess(green, yellow, gray, attempts)
+  words = valid_words(green, yellow, gray, true)
+  remaining_answers = words.length
+  if words.length > 6 - attempts || words.empty?
+    words = valid_words(green, yellow, gray, false)
+  end
+  raise "no words found" if words.empty?
+  [words[0][:word], words[0][:answer], remaining_answers]
+end
+
 def valid_words(green, yellow, gray, answers_only)
   WORDS.select do |w|
     next if answers_only && !w[:answer]
@@ -27,17 +37,10 @@ end
 
 green, yellow, gray = "-----", "-----", Set.new
 attempts = 0
-
 loop do
-  words = valid_words(green, yellow, gray, true)
-  remaining_answers = words.length
-  if words.length > 6 - attempts || words.empty?
-    words = valid_words(green, yellow, gray, false)
-  end
-  raise "no words found" if words.empty?
-  word = words.first[:word]
-  word += " (#{remaining_answers})"
-  word += " A" if words.first[:answer]
+  word, answer, remaining = next_guess(green, yellow, gray, attempts)
+  word += " (#{remaining})"
+  word += " A" if answer
 
   puts "> " + word
   print "? "
