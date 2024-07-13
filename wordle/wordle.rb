@@ -76,6 +76,9 @@ word = "raise (2316) A"
 loop do
   puts "> " + word
   print "? "
+  w = gets.strip
+  word = w unless w.empty?
+  print "= "
   hints = gets.strip
   break if hints == ""
 
