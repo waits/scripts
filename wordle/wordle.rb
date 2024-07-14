@@ -76,11 +76,17 @@ word = "raise (2316) A"
 loop do
   puts "> " + word
   print "? "
-  w = gets.strip
-  word = w unless w.empty?
-  print "= "
-  hints = gets.strip
-  break if hints == ""
+
+  input = gets.strip
+  if input =~ /^[-yg]{5}$/
+    hints = input
+  elsif input =~ /^\w{5}$/
+    word = input
+    print "= "
+    hints = gets.strip
+  else
+    break
+  end
 
   hints.each_char.with_index do |hint, i|
     case hint
