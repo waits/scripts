@@ -1,32 +1,48 @@
-2023-06-03 | base | random | R7
-Donnie	Sardakk	8	SW
-Michael	Xxcha	10	SE
-Dylan	Muaat	6 	NW
-Connor	Nekro	9	NE 	speaker
+2023-06-03 | random map | R7 | rejects: Mentak Jol-Nar Yssaril
+Donnie  Sardakk 8
+Michael Xxcha   10!
+Dylan   Muaat   6
+Connor^ Nekro   9
 
-2023-07-02 | base | standard | R6/time
-Beni	Xxcha	5	NW
-Matt	Naalu	7	SW
-Connor	Winnu	7 	S
-Diego	Barony	8 	SE	speaker
-Laura	Hacan	8 	NE
-Dylan	Sol		7 	N
+2023-07-02 | rulebook map | R6/time | unrestricted draft
+Beni    Xxcha   5
+Matt    Naalu   7
+Connor  Winnu   7
+Diego^  Barony  8!
+Laura   Hacan   8!
+Dylan   Sol	    7
 
-2023-07-22 | base | golden quaternion | R6
-Connor	Arborec	7 	NW	speaker
-Dylan   Saar	 10  	NE
-Beni    Yssaril	9	SW
-Laura   Jol-Nar	8 	SE
+2023-07-22 | "Golden Quaternion" | R6 | rejects: Ghosts L1Z1X Mentak Yin
+Connor^ Arborec 7
+Dylan   Saar    10!
+Beni    Yssaril 9
+Laura   Jol-Nar 8
 
-2024-01-28 | base | cinquefoil | R7
-Michael	Muaat	  7	  SE
-Deeps 	L1Z1X  	8	  SW
-Dylan	  Ghosts	9  	NE	speaker
-Beni	  Mentak	10	S
-Connor	Yin	   	9	  NW
+2024-01-28 | "Cinquefoil" | R7 | rejects: Sardakk Yssaril
+Michael	Muaat   7
+Deeps   L1Z1X   8
+Dylan^  Ghosts  9
+Beni    Mentak  10!
+Connor  Yin	    9
 
-2024-03-30 | pok | standard | R7
-Connor  Naalu     11  speaker
-Michael Argent    14
+2024-03-30 | rulebook map | R7 | rejects: Yssaril Sol Mahact
+Connor^ Naalu     11
+Michael Argent    14!
 Dylan   Cabal     11
 Laura   Empyrean  11
+
+2024-04-28 | rulebook map | R5 | rejects: Yssaril L1Z1X Barony
+Dylan   Titans      9
+Beni    Mahact      6
+Laura^  Nomad       5
+Connor  Winnu       10!
+Donnie  Naaz-Rokha  8
+Michael Saar        8
+
+2024-08-10 | "Won't You Be My Neighbor?" | R5 | rejects: Yin Mentak Hacan
+Diego   Xxcha       5
+Dylan   Keleres     5
+Beni^   Empyrean    10!
+Laura   Muaat       5
+Connor  Jol-Nar     ?
+Michael Naalu       7
